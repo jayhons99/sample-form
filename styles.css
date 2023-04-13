@@ -130,6 +130,10 @@ table {
 
 /* CUSTOM STYLES HERE */
 
+:root {
+  background-color: #051923;
+}
+
 .side {
   position: relative;
   width: 30%;

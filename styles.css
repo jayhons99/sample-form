@@ -137,12 +137,13 @@ table {
 .side {
   position: relative;
   width: 30%;
+  height: 100%;
 }
 #background {
   position: absolute;
-  height: 100vh;
   width: 100%;
   z-index: -1;
+  height: 100vh;
 }
 
 .logo-background {
@@ -166,4 +167,84 @@ table {
 .credits a:visited {
   text-decoration: none;
   color: #eae0d5;
+}
+
+.main {
+  position: relative;
+  float: right;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  height: 100vh;
+}
+
+.main p {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
+  width: 50%;
+  margin-left: 5rem;
+}
+
+.main form {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+  margin-left: 5rem;
+  width: 70vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pair {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  gap: 5rem;
+}
+
+.pair:nth-child(2) {
+  margin-top: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-body {
+  width: 70vw;
+  padding: 12px;
+  background-color: #00253e;
+  box-shadow: 5px 5px 5px 3px #00111c;
+}
+
+form button {
+  background-color: #003356;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+form button:hover {
+  cursor: pointer;
+  color: #003356;
+  background-color: #f4f3ee;
+}
+
+input:invalid {
+  border-color: red;
+  border-width: 0.1rem;
+}
+
+input:focus {
+  box-shadow: 5px 5px 5px #00111c;
 }
